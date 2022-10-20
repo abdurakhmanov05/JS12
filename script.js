@@ -12,7 +12,7 @@ const romainNumbers = (rom) => {
     let digits = Object.keys(map);
     let result = 0
 
-for (var i = 0; i < rom.length; ++i) {
+for (let i = 0; i < rom.length; ++i) {
     if (digits.indexOf(rom[i]) < digits.indexOf(rom[i + 1])) {
         result -= map[rom[i]];
     } else {
